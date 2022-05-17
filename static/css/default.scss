@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+section {
+    padding: 3em;
+    height: 100vh;
+    position: relative;
+}
+
+footer {
+    padding-right: 1em;
+    padding-left: 1em;
+    height: 15vh;
+    position: relative;
+    background-color: #f8f8f8;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "contact-info . socials";
+    align-items: center;
+    
+    .contact-info {
+        grid-area: contact-info;
+        font-size: 1em;
+    }
+
+    .socials {
+        grid-area: socials;
+        font-size: 2em;
+    }
+
+}
