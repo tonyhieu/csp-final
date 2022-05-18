@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&family=Open+Sans:wght@300&family=PT+Sans:wght@700&display=swap');
+
+@keyframes transitionInFromAbove {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes transitionInFromBelow {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes upAndDown {
+    /* 0% {
+        position: relative;
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(20px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+        position: relative;
+    } */
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+section:nth-of-type(1) {
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    display: grid;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+        font-size: 5em;
+        animation-name: transitionInFromAbove;
+        animation-duration: 1s;
+    
+        margin-bottom: -20%;
+    }
+
+    p {
+        font-size: 2em;
+        opacity: 0;
+        
+        animation-name: transitionInFromBelow;
+        animation-duration: 1s; 
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+
+        margin-top: -5%;
+    }
+
+    p::before, p::after {
+        position: relative;
+        content: '↓';
+        animation-name: upAndDown;
+        animation-duration: 1.5s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+    }
+}
