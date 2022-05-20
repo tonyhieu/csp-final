@@ -5,6 +5,14 @@ from __init__ import app
 def index():
     return render_template("index.html")
 
+@app.route("/scrollmagic")
+def scrollmagic():
+    return render_template("scrollmagic.html")
+
+@app.route("/design")
+def design():
+    return render_template("design.html")
+
 
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=8080, debug=True)

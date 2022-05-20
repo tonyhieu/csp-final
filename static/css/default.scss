@@ -18,9 +18,10 @@ section {
 }
 
 footer {
+    font-family: 'Open Sans', sans-serif;
     padding-right: 1em;
     padding-left: 1em;
-    height: 15vh;
+    height: 14vh;
     position: relative;
     background-color: #f8f8f8;
 
@@ -37,7 +38,32 @@ footer {
 
     .socials {
         grid-area: socials;
-        font-size: 2em;
-    }
+        font-size: 4em;
+        text-align: center;
 
+        .fa {
+            width: 1em;
+            text-align: center;
+            text-decoration: none;
+            
+            transform: scale(100%);
+            transition: all 0.25s;
+        }
+
+        .fa:hover {
+            transform: scale(120%)
+        }
+
+        .fa-github {
+            color: black;
+            margin-right: 1em;
+            border-radius: 0.2em;
+        }
+
+        .fa-instagram {
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+            color: white;
+            border-radius: 0.2em;
+        }
+    }
 }

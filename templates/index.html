@@ -1,8 +1,14 @@
 {% extends "layouts/base.html" %}
 
 {% block meta %}
+<title>Home</title>
 
 <link rel="stylesheet" href="/static/css/index.css" type="text/css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js" integrity="sha512-ExEP0u1SOp7gvzBoHWYmi6CEzdW2VHgfMeRZTetgX4HazJhC/UO1l83VGn4TLvgmIAxotN8uBcDE05a3sJglOA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" integrity="sha512-O+atZ/gABlcFlpIoLQR04f72qHqZWKwTVsQZHqk/8VE2nrzDlnqhXbnXP7Gh/TyhpPT8tEUm5A580GG8AloHTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 {% endblock %}
 
@@ -15,8 +21,17 @@
     <p> Scroll down for more </p>
 </section>
 
-<section>
-    
+<section class="section-one" id="section-one">
+    <h2 id="greetings">Hello!</h2>
+    <p id="main-text">My name is Anthony Vo, and I've been a student with Mr. Mortensen for three years. My final project was to renovate my golf coach's website, so this site is here to document my changes.
+        <br />
+        <br />
+        Below are some of the things I've been working on to renovate the website. Click through them to see them in action and for an explanation of them!
+    </p>
+    <div class="links">
+        <button onclick="window.location.href='/scrollmagic';" style="grid-area: button-1">Scroll Magic</button>
+        <button onclick="window.location.href='/design';" style="grid-area: button-2">CSS and Design</button>
+    </div>
 </section>
 
 <script src="/static/js/index.js"></script>

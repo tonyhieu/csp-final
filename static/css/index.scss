@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arapey&family=Open+Sans:wght@300&family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 @keyframes transitionInFromAbove {
     from {
@@ -51,7 +52,6 @@
     }
 }
 
-
 section:nth-of-type(1) {
     background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
     font-family: 'PT Sans', sans-serif;
@@ -87,5 +87,57 @@ section:nth-of-type(1) {
         animation-duration: 1.5s;
         animation-delay: 2s;
         animation-iteration-count: infinite;
+    }
+}
+
+.section-one {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "greetings" "main-text";
+    justify-items: center;
+
+    h2 {
+        grid-area: greetings;
+        font-size: 4em;
+        text-align: center;
+    }
+
+    p {
+        grid-area: main-text;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .links {
+        width: 100%;
+        margin-top: -15%;
+
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: ". button-1 . button-2 .";
+        align-items: center;
+
+        button {
+            border: none;
+            color: black;
+            padding: 1em;
+            text-align: center;
+            text-decoration: none;
+            font-size: 2em;
+            border-radius: 0.5em;
+            font-family: 'Source Sans Pro', sans-serif;
+
+            transition: all 0.5s;
+            transform: scale(100%);
+            background-color: #7ccbff;
+        }
+
+        button:hover {
+            transform: scale(110%);
+            background-color: #37afff;
+        }
     }
 }
