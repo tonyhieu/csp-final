@@ -1,7 +1,7 @@
 {% extends "layouts/base.html" %}
 
 {% block meta %}
-<link rel="stylesheet" href="/static/css/info-pages.scss" type="text/css">
+<link rel="stylesheet" href="/static/css/info-pages.css" type="text/css">
 <title>{{ title }}</title>
 {% endblock %}
 
@@ -10,8 +10,13 @@
 {% block content %}
 
 <header>
-    
+    <span>Back to home</span>
 </header>
+
+<section>
+    <img src="{{ image }}">
+    <h1>{{ title }}</h1>
+</section>
 
 <section>
     {% block text %}{% endblock %}

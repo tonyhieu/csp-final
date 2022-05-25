@@ -7,11 +7,11 @@ def index():
 
 @app.route("/scrollmagic")
 def scrollmagic():
-    return render_template("scrollmagic.html")
+    return render_template("scrollmagic.html", title="Scroll Magic", image="https://cms-assets.tutsplus.com/uploads/users/30/posts/23726/preview_image/scrollmagic.jpg")
 
 @app.route("/design")
 def design():
-    return render_template("design.html")
+    return render_template("design.html", title="Design and CSS", image="https://media.istockphoto.com/photos/tropical-paradise-landscape-picture-id1033545162?k=20&m=1033545162&s=612x612&w=0&h=ZNemh8RD7XCM7sWrS7NXt-849G4uWON2631eSKQPWMk=")
 
 
 if __name__ == "__main__":

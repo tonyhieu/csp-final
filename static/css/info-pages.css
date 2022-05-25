@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Arapey&family=Open+Sans:wght@300&family=PT+Sans:wght@700&display=swap");
+@-webkit-keyframes transitionIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes imageTransitionIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+@keyframes imageTransitionIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+* {
+  opacity: 0;
+  -webkit-animation-name: transitionIn;
+          animation-name: transitionIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+header {
+  padding: 1em;
+  height: 8vh;
+  width: 100%;
+  position: relative;
+  background-color: #f8f8f8;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section:nth-of-type(1) {
+  overflow: hidden;
+  position: relative;
+  font-family: 'PT Sans', sans-serif;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+section:nth-of-type(1) img {
+  -webkit-animation-name: imageTransitionIn !important;
+          animation-name: imageTransitionIn !important;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+section:nth-of-type(1) h1 {
+  position: relative;
+  font-size: 5em;
+}
+/*# sourceMappingURL=info-pages.css.map */

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&family=Open+Sans:wght@300&family=PT+Sans:wght@700&display=swap');
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes imageTransitionIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+* {
+    opacity: 0;
+    animation-name: transitionIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+header {
+    padding: 1em;
+    height: 8vh;
+    width: 100%;
+    position: relative;
+    background-color: #f8f8f8;
+
+    display: grid;
+    align-items: center;
+}
+
+section:nth-of-type(1) {
+    overflow: hidden;
+    position: relative;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    display: grid;
+    align-items: center;
+    text-align: center;
+
+
+    img {
+        animation-name: imageTransitionIn !important;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        position: relative;
+        font-size: 5em;
+    }
+}
