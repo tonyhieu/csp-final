@@ -49,4 +49,4 @@ if (getCookie("visited") == "") {
     scrollDown.style.opacity = "1";
 }
 
-setCookie("visited", "yes", 1);
+setCookie("visited", "yes", 1/24);

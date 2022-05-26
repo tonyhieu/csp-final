@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arapey&family=Open+Sans:wght@300&family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 @keyframes transitionIn {
     from {
@@ -21,7 +22,7 @@
 * {
     opacity: 0;
     animation-name: transitionIn;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 
@@ -34,13 +35,20 @@ header {
 
     display: grid;
     align-items: center;
+
+    font-family: 'Source Sans Pro', sans-serif;
+
+    a, a:link, a:visited, a:active {
+        color: black;
+        text-decoration: none;
+    }
 }
 
 section:nth-of-type(1) {
     overflow: hidden;
     position: relative;
     font-family: 'PT Sans', sans-serif;
-    color: white;
+    color: #666666;
     display: grid;
     align-items: center;
     text-align: center;
@@ -60,5 +68,36 @@ section:nth-of-type(1) {
     h1 {
         position: relative;
         font-size: 5em;
+    }
+}
+
+section:nth-of-type(2) {
+    height: auto;
+
+    p {
+        font-size: 1.25em;
+        text-align: left;
+    }
+    h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+    a, a:link, a:visited, a:active {
+        font-size: 1.25em;
+        color: black;
+        text-decoration: underline;
+    }
+    img {
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .caption {
+        margin-top: -0.5em;
+        font-size: 0.75em;
+        text-align: center;
     }
 }

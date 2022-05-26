@@ -52,7 +52,37 @@
     }
 }
 
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes imageTransitionIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+// *:not(.section-one) {
+//     opacity: 0;
+//     animation-name: transitionIn;
+//     animation-duration: 0.5s;
+//     animation-fill-mode: forwards;
+// }
+
 section:nth-of-type(1) {
+    opacity: 0;
+    animation-name: transitionIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
     background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
     font-family: 'PT Sans', sans-serif;
     color: white;
@@ -69,8 +99,11 @@ section:nth-of-type(1) {
     }
 
     h1.play-animation {
+        opacity: 0;
         animation-name: transitionInFromAbove;
+        animation-fill-mode: forwards;
         animation-duration: 1s;
+        animation-delay: 1s
     }
 
     p {
@@ -88,7 +121,7 @@ section:nth-of-type(1) {
     p.play-animation {
         animation-name: transitionInFromBelow;
         animation-duration: 1s; 
-        animation-delay: 1s;
+        animation-delay: 2s;
         animation-fill-mode: forwards;
     }
 

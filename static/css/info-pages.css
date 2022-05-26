@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Arapey&family=Open+Sans:wght@300&family=PT+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 @-webkit-keyframes transitionIn {
   from {
     opacity: 0;
@@ -38,8 +39,8 @@
   opacity: 0;
   -webkit-animation-name: transitionIn;
           animation-name: transitionIn;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -55,13 +56,19 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header a, header a:link, header a:visited, header a:active {
+  color: black;
+  text-decoration: none;
 }
 
 section:nth-of-type(1) {
   overflow: hidden;
   position: relative;
   font-family: 'PT Sans', sans-serif;
-  color: white;
+  color: #666666;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -87,5 +94,40 @@ section:nth-of-type(1) img {
 section:nth-of-type(1) h1 {
   position: relative;
   font-size: 5em;
+}
+
+section:nth-of-type(2) {
+  height: auto;
+}
+
+section:nth-of-type(2) p {
+  font-size: 1.25em;
+  text-align: left;
+}
+
+section:nth-of-type(2) h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+section:nth-of-type(2) a, section:nth-of-type(2) a:link, section:nth-of-type(2) a:visited, section:nth-of-type(2) a:active {
+  font-size: 1.25em;
+  color: black;
+  text-decoration: underline;
+}
+
+section:nth-of-type(2) img {
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+section:nth-of-type(2) .caption {
+  margin-top: -0.5em;
+  font-size: 0.75em;
+  text-align: center;
 }
 /*# sourceMappingURL=info-pages.css.map */

@@ -10,16 +10,17 @@
 {% block content %}
 
 <header>
-    <span>Back to home</span>
+    <span><a href="/">Back to home</a></span>
 </header>
 
-<section>
+<section id="top">
     <img src="{{ image }}">
     <h1>{{ title }}</h1>
 </section>
 
 <section>
     {% block text %}{% endblock %}
+    <a href="#top">Back to top</a>
 </section>
 
 {% endblock %}
