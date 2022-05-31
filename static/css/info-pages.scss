@@ -19,14 +19,19 @@
     }
 }
 
-* {
-    opacity: 0;
-    animation-name: transitionIn;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
+// body {
+//     opacity: 0;
+//     animation-name: transitionIn;
+//     animation-duration: 1s;
+//     animation-fill-mode: both;
+// }
 
 header {
+    opacity: 0;
+    animation-name: transitionIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+
     padding: 1em;
     height: 8vh;
     width: 100%;
@@ -45,6 +50,11 @@ header {
 }
 
 section:nth-of-type(1) {
+    opacity: 0;
+    animation-name: transitionIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    
     overflow: hidden;
     position: relative;
     font-family: 'PT Sans', sans-serif;
@@ -72,6 +82,11 @@ section:nth-of-type(1) {
 }
 
 section:nth-of-type(2) {
+    opacity: 0;
+    animation-name: transitionIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+
     height: auto;
 
     p {
@@ -100,4 +115,10 @@ section:nth-of-type(2) {
         font-size: 0.75em;
         text-align: center;
     }
+}
+
+.fade-out {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
 }

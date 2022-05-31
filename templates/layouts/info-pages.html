@@ -10,7 +10,7 @@
 {% block content %}
 
 <header>
-    <span><a href="/">Back to home</a></span>
+    <span><a href="/" class="internal-link">Back to home</a></span>
 </header>
 
 <section id="top">
@@ -22,5 +22,19 @@
     {% block text %}{% endblock %}
     <a href="#top">Back to top</a>
 </section>
+
+<script>
+$(document).ready(function () {
+    $('.internal-link').click(function() {
+        event.preventDefault();
+        newLocation = this.href;
+        $('body').fadeOut(500, newpage);
+    });
+    function newpage() {
+        window.location = newLocation;
+    }
+});
+
+</script>
 
 {% endblock %}

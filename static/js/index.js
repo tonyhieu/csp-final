@@ -50,3 +50,10 @@ if (getCookie("visited") == "") {
 }
 
 setCookie("visited", "yes", 1/24);
+
+
+function loadPage(address) {
+    $('body').fadeOut(500, function () {
+        window.location = address;
+    });
+}
