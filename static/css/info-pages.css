@@ -82,8 +82,8 @@ section:nth-of-type(1) {
 }
 
 section:nth-of-type(1) img {
-  -webkit-animation-name: imageTransitionIn !important;
-          animation-name: imageTransitionIn !important;
+  -webkit-animation-name: imageTransitionIn;
+          animation-name: imageTransitionIn;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;

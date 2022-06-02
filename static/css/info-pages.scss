@@ -65,7 +65,7 @@ section:nth-of-type(1) {
 
 
     img {
-        animation-name: imageTransitionIn !important;
+        animation-name: imageTransitionIn;
         animation-duration: 0.5s;
         animation-fill-mode: forwards;
         position: absolute;
