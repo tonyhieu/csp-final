@@ -277,4 +277,13 @@ section:nth-of-type(1) p::before, section:nth-of-type(1) p::after {
           transform: scale(110%);
   background-color: #37afff;
 }
+
+.section-one a {
+  text-decoration: underline;
+  color: black;
+}
+
+.section-one a:hover {
+  color: #909090;
+}
 /*# sourceMappingURL=index.css.map */
